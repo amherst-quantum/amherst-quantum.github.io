@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amherst Quantum Initiative - AQI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="AQI_logo.png" alt="AQI Logo" class="logo">
+                <span class="nav-title">Amherst Quantum Initiative</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#programs" class="nav-link">Programs</a></li>
+                <li><a href="#outreach" class="nav-link">Outreach</a></li>
+                <li><a href="#contact" class="nav-link">Get Involved</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="quantum-background"></canvas>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Explore the
+                        <span class="gradient-text">Quantum</span>
+                        Frontier
+                    </h1>
+                    <p class="hero-description">
+                                                    The Amherst Quantum Initiative unites undergraduate and graduate communities from all disciplines across UMass Amherst and Amherst College to explore quantum sensing, communications, computation, and related areas.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">Learn More</a>
+                        <a href="#contact" class="btn btn-secondary">Join Us</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="quantum-animation">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About AQI</h2>
+                <p class="section-subtitle">Student-led excellence in quantum education and research</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="about-info">
+                            <h3>United Community</h3>
+                            <p>Bringing together undergraduate and graduate students from all academic disciplines across UMass Amherst and Amherst College—welcoming everyone from physics and engineering to biology, chemistry, mathematics, philosophy, and beyond.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="about-info">
+                            <h3>Full Quantum Spectrum</h3>
+                            <p>Covering quantum sensing, communications, computation, and related areas through comprehensive education and research opportunities to help members explore diverse pathways into the quantum field.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="about-info">
+                            <h3>Launch Your Career</h3>
+                            <p>Creating an inclusive platform to learn skills, build networks, and pursue opportunities across the quantum landscape.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Programs</h2>
+                <p class="section-subtitle">Bridging quantum education from fundamentals to research</p>
+            </div>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Seminar Series</h3>
+                    <p>Curated talks featuring speakers from academia, national labs, and industry, with undergraduate-focused primers and discussion groups to bridge graduate research to undergraduates.</p>
+                    <ul class="program-features">
+                        <li>Academic speakers from leading institutions</li>
+                        <li>Industry professionals and researchers</li>
+                        <li>Graduate-undergraduate bridge programs</li>
+                        <li>Interactive post-talk discussion groups</li>
+                        <li>Coordinated invitations across disciplines</li>
+                        <li>Primers for complex topics</li>
+                    </ul>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Curriculum Development</h3>
+                    <p>Comprehensive quantum-information fundamentals curriculum designed to accelerate student readiness for research projects, internships, and quantum careers.</p>
+                    <ul class="program-features">
+                        <li>Quantum mechanics fundamentals</li>
+                        <li>Quantum computing principles</li>
+                        <li>Practical programming skills</li>
+                        <li>Research project preparation</li>
+                        <li>Industry internship readiness</li>
+                        <li>Hands-on laboratory experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- K-12 Outreach Section -->
+    <section class="outreach">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">K-12 Outreach</h2>
+                <p class="section-subtitle">Inspiring the next generation of quantum scientists and engineers</p>
+            </div>
+            
+            <div class="outreach-content">
+                <div class="outreach-text">
+                    <div class="outreach-highlight">
+                        <h3>Quantum Education for Young Minds</h3>
+                        <p>AQI is committed to demystifying quantum science for K-12 students across the Pioneer Valley. Through hands-on workshops, interactive demonstrations, and age-appropriate explanations, we bring the fascinating world of quantum mechanics into local classrooms and community centers, inspiring the next generation of quantum scientists.</p>
+                    </div>
+                    
+                    <div class="outreach-features">
+                        <div class="outreach-item">
+                            <div class="outreach-icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div class="outreach-info">
+                                <h4>School Visits</h4>
+                                <p>Interactive presentations and quantum demonstrations for middle and high schools</p>
+                            </div>
+                        </div>
+                        
+                        <div class="outreach-item">
+                            <div class="outreach-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="outreach-info">
+                                <h4>Hands-On Workshops</h4>
+                                <p>Practical experiments that make quantum concepts tangible and exciting</p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                
+                <div class="outreach-visual">
+                    <div class="quantum-demo">
+                        <div class="demo-particle"></div>
+                        <div class="demo-particle"></div>
+                        <div class="demo-particle"></div>
+                        <div class="demo-particle"></div>
+                        <div class="demo-wave"></div>
+                        <div class="demo-wave"></div>
+                    </div>
+                    <div class="outreach-quote">
+                        <blockquote>
+                            "Making quantum science accessible to young learners builds the foundation for tomorrow's breakthrough discoveries."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Mission</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Colleges</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Areas of Quantum</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Possibilities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get Involved</h2>
+                <p class="section-subtitle">Join the quantum revolution at Amherst</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>amherst.quantum@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Institutions</h4>
+                            <p>UMass Amherst & Amherst College</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Who Can Join</h4>
+                            <p>Students from All Disciplines</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="join-form">
+                    <h3>Ready to Join?</h3>
+                    <p>Whether you're from physics, engineering, chemistry, biology, mathematics, philosophy, or any other discipline—if you're curious about quantum science, we welcome you to join our community.</p>
+                    <a href="mailto:amherst.quantum@gmail.com" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Amherst Quantum Initiative</h4>
+                    <p>Exploring the quantum frontier together through education, research, and community engagement</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Programs</h4>
+                        <ul>
+                            <li><a href="#programs">Seminars</a></li>
+                            <li><a href="#programs">Curriculum</a></li>
+                            <li><a href="#outreach">K-12 Outreach</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Join Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Amherst Quantum Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="quantum-background.js"></script>
+</body>
+</html> 
